@@ -1,0 +1,8 @@
+{
+  "name": "Berkeley Law Seating Chart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "93abca0e"
+}
