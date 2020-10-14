@@ -1,6 +1,6 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import {IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton } from '@ionic/react';
-import { pin, chevronForwardCircleOutline, wine, warning, walk } from 'ionicons/icons';
+import { pin, chevronForwardCircleOutline, schoolOutline, wine, warning, walk } from 'ionicons/icons';
 import React from 'react';
 import { useParams } from 'react-router';
 import './Page.css';
@@ -28,8 +28,8 @@ const Classes: React.FunctionComponent = () => {
 
             {/* Design 1 */}
                 <IonCard>
-                    <IonItem href="#" className="ion-activated">
-                        <IonIcon icon={chevronForwardCircleOutline} slot="start" />
+                    <IonItem href="/page/Chart" className="ion-activated">
+                        <IonIcon icon={schoolOutline} slot="start" />
                         <IonCardHeader>
                             <IonCardSubtitle>Course # 1234</IonCardSubtitle>
                             <IonCardTitle>Law Course Title</IonCardTitle>
@@ -42,8 +42,8 @@ const Classes: React.FunctionComponent = () => {
                 </IonCard>
 
                 <IonCard>
-                    <IonItem href="#" className="ion-activated">
-                        <IonIcon icon={chevronForwardCircleOutline} slot="start" />
+                    <IonItem href="/page/Chart" className="ion-activated">
+                        <IonIcon icon={schoolOutline} slot="start" />
                         <IonCardHeader>
                             <IonCardSubtitle>Course # 1234</IonCardSubtitle>
                             <IonCardTitle>Law Course Title</IonCardTitle>
