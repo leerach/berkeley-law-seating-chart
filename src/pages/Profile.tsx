@@ -6,7 +6,6 @@ import { CardExamples } from '../components/Card';
 import ExploreContainer from '../components/ExploreContainer';
 
 const Profile: React.FunctionComponent = () => {
-    const { name } = useParams<{ name: string; }>();
     return (
         <IonPage>
             <IonHeader>
@@ -14,17 +13,17 @@ const Profile: React.FunctionComponent = () => {
                     <IonButtons slot="start">
                         <IonMenuButton />
                     </IonButtons>
-                    <IonTitle>{name}</IonTitle>
+                    <IonTitle>{"Profile"}</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
             <IonContent fullscreen>
                 <IonHeader collapse="condense">
                     <IonToolbar>
-                        <IonTitle size="large">{name}</IonTitle>
+                        <IonTitle size="large">{"Profile"}</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                laalallallalla
+                Under Construction
             </IonContent>
         </IonPage>
     );
