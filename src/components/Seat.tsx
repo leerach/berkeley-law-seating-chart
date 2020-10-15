@@ -1,43 +1,11 @@
 import React, { useState } from "react";
 import "./Seat.css";
-import {
-  IonButtons,
-  IonContent,
-  IonHeader,
-  IonMenuButton,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-} from "@ionic/react";
 import { IonFab, IonFabButton, IonFabList, IonFooter } from "@ionic/react";
 import {
-  IonCard,
-  IonCardHeader,
-  IonCardSubtitle,
-  IonCardTitle,
-  IonCardContent,
-  IonItem,
-  IonIcon,
-  IonLabel,
   IonButton,
 } from "@ionic/react";
 import { IonPopover } from "@ionic/react";
 import { IonGrid, IonRow, IonCol } from "@ionic/react";
-import {
-  add,
-  settings,
-  share,
-  person,
-  arrowForwardCircle,
-  arrowBackCircle,
-  arrowUpCircle,
-  logoVimeo,
-  logoFacebook,
-  logoInstagram,
-  logoTwitter,
-  checkbox,
-  closeCircleOutline,
-} from "ionicons/icons";
 
 interface ContainerProps {
 }
@@ -63,6 +31,8 @@ const Seat: React.FC<ContainerProps> = () => {
           }
         >
           <p>Are you sure you want to select this seat?</p>
+          <IonButton color="success">Yes</IonButton>
+          <IonButton color="danger">No</IonButton>
         </IonPopover>
         <IonButton
           onClick={(e) => setShowPopover({ open: true, event: e.nativeEvent })}
@@ -71,7 +41,6 @@ const Seat: React.FC<ContainerProps> = () => {
         </IonButton>
       </>
     </div>
-    
   );
 };
 

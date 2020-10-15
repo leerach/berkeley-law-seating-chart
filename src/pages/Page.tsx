@@ -27,7 +27,6 @@ const Page: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name={name} />
-        woooo
         <CardExamples/>
       </IonContent>
     </IonPage>

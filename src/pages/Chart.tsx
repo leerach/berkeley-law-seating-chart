@@ -2,11 +2,8 @@ import React, {useState} from 'react';
 import Seat from "../components/Seat";
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { IonFab, IonFabButton, IonFabList, IonFooter } from '@ionic/react';
-import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton } from '@ionic/react';
-import { IonPopover } from '@ionic/react';
 import { IonGrid, IonRow, IonCol } from "@ionic/react";
 import { add, settings, share, person, arrowForwardCircle, arrowBackCircle, arrowUpCircle, logoVimeo, logoFacebook, logoInstagram, logoTwitter, checkbox, closeCircleOutline } from 'ionicons/icons';
-import { render } from '@testing-library/react';
 
 interface ContainerProps {
     name: string;
@@ -45,9 +42,6 @@ const Chart: React.FC<ContainerProps> = () => {
             </IonToolbar>
           </IonHeader>
 
-          <Seat>
-            </Seat>
-
           {/* Design 1 */}
           
 
@@ -73,17 +67,6 @@ const Chart: React.FC<ContainerProps> = () => {
             {/* Top Row (20 seats each row)*/}
             {/* For admin role, ask for how many seats they have in classroom, compute the rows and columns accordingly */}
             <IonRow>
-              {/* <IonCol> */}
-                {/* <IonPopover
-                  isOpen={showPopover}
-                  cssClass="my-custom-class"
-                  onDidDismiss={(e) => setShowPopover(false)}
-                >
-                  <p>This is popover content</p>
-                </IonPopover>
-                <IonButton onClick={() => setShowPopover(true)}>
-                  Select Seat
-                </IonButton> */}{" "}
               <IonCol><Seat></Seat></IonCol>
               <IonCol><Seat></Seat></IonCol>
               <IonCol><Seat></Seat></IonCol>
