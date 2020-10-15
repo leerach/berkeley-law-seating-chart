@@ -24,7 +24,7 @@ const Seat: React.FC<ContainerProps> = () => {
       <>
         <IonPopover
           isOpen={showPopover.open}
-          cssClass="my-custom-class"
+          cssClass="seat-class"
           event={showPopover.event}
           onDidDismiss={(e) =>
             setShowPopover({ open: false, event: undefined })
@@ -34,7 +34,7 @@ const Seat: React.FC<ContainerProps> = () => {
           <IonButton color="success">Yes</IonButton>
           <IonButton color="danger">No</IonButton>
         </IonPopover>
-        <IonButton
+        <IonButton fill = 'solid' color = 'secondary'
           onClick={(e) => setShowPopover({ open: true, event: e.nativeEvent })}
         >
           Seat

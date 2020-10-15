@@ -1,5 +1,5 @@
 /* Works - pass "my-custom-class" in cssClass to increase specificity */
-.my-custom-class .popover-content {
+.seat-class .popover-content {
   background: #ffffff;
   text-align: center;
 }
