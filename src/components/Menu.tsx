@@ -12,7 +12,7 @@ import {
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp, albumsOutline, albumsSharp, personCircleOutline, personCircleSharp } from 'ionicons/icons';
+import { albumsOutline, albumsSharp, personCircleOutline, personCircleSharp, logOutOutline, logOutSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -35,6 +35,15 @@ const appPages: AppPage[] = [
     url: '/page/Profile',
     iosIcon: personCircleOutline,
     mdIcon: personCircleSharp
+    
+  },
+
+  {
+    title: 'Logout',
+    url: '/page/Logout',
+    iosIcon: logOutOutline,
+    mdIcon: logOutSharp
+
   },
 ];
 

@@ -1,31 +1,58 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import React from 'react';
-import { useParams } from 'react-router';
-import './Page.css';
-import { CardExamples } from '../components/Card';
-import ExploreContainer from '../components/ExploreContainer';
+import React, { useState } from 'react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider } from '@ionic/react';
 
-const Profile: React.FunctionComponent = () => {
+export const Profile: React.FC = () => {
+
+    const [text, setText] = useState<string>();
+    const [number, setNumber] = useState<number>();
+
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonButtons slot="start">
-                        <IonMenuButton />
-                    </IonButtons>
-                    <IonTitle>{"Profile"}</IonTitle>
+                    <IonTitle>My Profile</IonTitle>
                 </IonToolbar>
             </IonHeader>
+            <IonContent>
+                <IonList>
+                    <IonItemDivider>Name</IonItemDivider>
+                    <IonItem>
+                        <IonInput value={text} placeholder="Enter Input" onIonChange={e => setText(e.detail.value!)}></IonInput>
+                    </IonItem>
 
-            <IonContent fullscreen>
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">{"Profile"}</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
-                Under Construction
+                    <IonItemDivider>School Email</IonItemDivider>
+                    <IonItem>
+                        <IonInput value={text} placeholder="Enter Input" onIonChange={e => setText(e.detail.value!)} clearInput></IonInput>
+                    </IonItem>
+
+                    <IonItemDivider>Year</IonItemDivider>
+                    <IonItem>
+                        <IonInput type="number" value={number} placeholder="Enter Number" onIonChange={e => setNumber(parseInt(e.detail.value!, 10))}></IonInput>
+                    </IonItem>
+
+                    <IonItem>
+                        <IonLabel>Default Label</IonLabel>
+                        <IonInput></IonInput>
+                    </IonItem>
+
+                    <IonItem>
+                        <IonLabel position="floating">Floating Label</IonLabel>
+                        <IonInput value={text}></IonInput>
+                    </IonItem>
+
+                    <IonItem>
+                        <IonLabel position="fixed">Fixed Label</IonLabel>
+                        <IonInput value={text}></IonInput>
+                    </IonItem>
+
+                    <IonItem>
+                        <IonLabel position="stacked">Stacked Label</IonLabel>
+                        <IonInput value={text}> </IonInput>
+                    </IonItem>
+                </IonList>
             </IonContent>
         </IonPage>
     );
 };
-export default Profile;
+
+export default Profile
