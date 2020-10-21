@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Seat from "../components/Seat";
+import "./Chart.css";
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { IonFab, IonFabButton, IonFabList, IonFooter } from '@ionic/react';
 import { IonGrid, IonRow, IonCol } from "@ionic/react";
@@ -62,309 +63,83 @@ const Chart: React.FC<ContainerProps> = () => {
               </IonFabButton>
             </IonFabList>
           </IonFab> */}
+      
+      <div id="btndiv">
+        <div id="outer">
+            <div className="inner">
+                <Seat></Seat>
+            </div>
+            <div className="inner">
+                <Seat></Seat>
+            </div>
+            <div className="inner">
+                 <Seat></Seat>
+            </div>
+            <div className="inner">
+                 <Seat></Seat>
+            </div>
+            <div className="inner">
+                 <Seat></Seat>
+            </div>
+        </div>
 
-          <IonGrid>
-            {/* Top Row (20 seats each row)*/}
-            {/* For admin role, ask for how many seats they have in classroom, compute the rows and columns accordingly */}
-            <IonRow>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              {/* </IonCol> */}
-              
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
+        <div id="outer2">
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+        </div>
 
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
+        <div id="outer3">
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+        </div>
 
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
+        <div id="outer4">
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+          <div className="inner">
+               <Seat></Seat>
+          </div>
+        </div>
+      </div>
 
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
+            
 
-            {/* Row 2 */}
-            <IonRow>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* Row 3 */}
-            <IonRow>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* Row 4 */}
-            <IonRow>
-             <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* Row 5 */}
-            <IonRow>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* Row 6 */}
-            <IonRow>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol><IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* Row 7 */}
-            <IonRow className="ion-align-items-start">
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* Row 8 */}
-            <IonRow className="ion-align-items-center">
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* row 9 */}
-            <IonRow className="ion-align-items-start">
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-            {/* Row 10 */}
-            <IonRow>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-              <IonCol><Seat></Seat></IonCol>
-            </IonRow>
-
-          </IonGrid>
         </IonContent>
 
         <IonFooter>
