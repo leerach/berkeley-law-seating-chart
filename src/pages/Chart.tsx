@@ -64,80 +64,57 @@ const Chart: React.FC<ContainerProps> = () => {
             </IonFabList>
           </IonFab> */}
       
-      <div id="btndiv">
-        <div id="outer">
-            <div className="inner">
-                <Seat></Seat>
-            </div>
-            <div className="inner">
-                <Seat></Seat>
-            </div>
-            <div className="inner">
-                 <Seat></Seat>
-            </div>
-            <div className="inner">
-                 <Seat></Seat>
-            </div>
-            <div className="inner">
-                 <Seat></Seat>
-            </div>
-        </div>
+         
+      <div className="chart">
 
-        <div id="outer2">
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-        </div>
+        <div className="chart-keys">
 
-        <div id="outer3">
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-        </div>
+          <button type="button" className="aisle-left" value="=">Aisle</button>
 
-        <div id="outer4">
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
-          <div className="inner">
-               <Seat></Seat>
-          </div>
+
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+
+
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+
+
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+
+
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+
+
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+          <Seat></Seat>
+
+          <button type="button" className="aisle-right" value="=">Aisle</button>
+
         </div>
       </div>
-
             
 
         </IonContent>
